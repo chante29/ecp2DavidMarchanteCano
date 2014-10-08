@@ -60,4 +60,8 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public boolean isEquivalente(Fraction f1) {
+        return false;
+    }
+    
 }
