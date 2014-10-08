@@ -27,7 +27,7 @@ public class FractionTest {
 	@Test
 	public void testDecimal() {
 		assertEquals(0.66, f.decimal(), 0.01);
-	}
+	} 
 
 	@Test
 	public void testIsEquivalente(){
