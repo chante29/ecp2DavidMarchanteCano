@@ -9,6 +9,7 @@ import org.junit.Test;
 
 public class DecimalCollectionTest {
     private DecimalCollection collection;
+    private DecimalCollection collection2;
 
     @Before
     public void before() { 
@@ -30,6 +31,13 @@ public class DecimalCollectionTest {
     @Test 
    	public void testSum() { 
     	assertEquals(6, collection.sum(), 0.1);
+   	} 
+    
+    @Test 
+   	public void menor() { 
+    	collection2.add(1.5);
+    	collection2.add(0.3);
+    	assertEquals(0.3, collection2.menor(), 10e-5);
    	} 
    
 
