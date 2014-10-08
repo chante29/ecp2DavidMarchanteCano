@@ -34,4 +34,11 @@ public class FractionTest {
 		assertEquals(false, this.f1.isEquivalente(f2));
 		assertEquals(true, this.f.isEquivalente(f1));
 	}
+	
+	@Test
+	public void testIsMenor(){
+		Fraction fr1 = new Fraction (2,3);
+		Fraction fr2 = new Fraction (1,2);
+		assertEquals(fr1, fr1.isMenor(fr2));
+	}
 }

@@ -64,4 +64,7 @@ public class Fraction {
         return false;
     }
     
+    public Fraction isMenor(Fraction f1){
+    	return null;
+    }
 }
