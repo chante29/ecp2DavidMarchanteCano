@@ -39,7 +39,7 @@ public class FractionTest {
 	public void testIsMenor(){
 		Fraction fr1 = new Fraction (2,3);
 		Fraction fr2 = new Fraction (1,2);
-		assertEquals(fr1, fr1.isMenor(fr2));
+		assertEquals(fr2, fr1.isMenor(fr2));
 	}
 	
 	@Test

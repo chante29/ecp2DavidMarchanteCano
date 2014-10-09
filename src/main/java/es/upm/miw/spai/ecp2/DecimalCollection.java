@@ -35,8 +35,13 @@ public class DecimalCollection {
         return higher;
     }
     
-    public double menor(){
-    	return 0.0;
+    public double menor() {
+        double menor = Double.POSITIVE_INFINITY;
+        for (double item : this.collection) {
+            if (item < menor)
+                menor = item;
+        }
+        return menor;
     }
 
 }

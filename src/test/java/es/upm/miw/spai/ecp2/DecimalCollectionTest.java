@@ -14,6 +14,7 @@ public class DecimalCollectionTest {
     @Before
     public void before() { 
     	collection = new DecimalCollection();
+    	collection2 = new DecimalCollection();
     	collection.add(2.5);
     	collection.add(3.5);
     }

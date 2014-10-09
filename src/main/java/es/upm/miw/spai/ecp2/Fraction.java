@@ -62,9 +62,15 @@ public class Fraction {
     
     public boolean isEquivalente(Fraction f1) {
         return false;
+    }    
+  
+    public Fraction isMenor(Fraction f1){
+    	Fraction f = new Fraction(this.getNumerator(), this.getDenominator());
+    	Fraction isMenor = f;
+    	if(this.decimal() > f1.decimal()){
+    		isMenor = f1;
+    	}
+    	return isMenor;
     }
     
-    public Fraction isMenor(Fraction f1){
-    	return null;
-    }
 }
